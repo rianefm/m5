@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function FiltroInterativoSection() {
+export default function InteractiveFilterSection() {
   const [estado, setEstado] = useState("");
   const [servico, setServico] = useState("");
   const [resultados, setResultados] = useState<any[]>([]);
@@ -25,6 +25,10 @@ export default function FiltroInterativoSection() {
       }
 
       const res = await fetch(url);
+      if (!res.ok) {
+        throw new Error(`Erro na API: ${res.status} - ${res.statusText}`);
+      }
+
       const data = await res.json();
 
       if (Array.isArray(data) && data.length > 0) {
@@ -32,15 +36,19 @@ export default function FiltroInterativoSection() {
       } else {
         setMensagem(data.mensagem || "Nenhuma ONG encontrada.");
       }
-    } catch (error) {
-      console.error("Erro ao buscar ONGs:", error);
-      setMensagem("Erro ao buscar ONGs.");
+    } catch (error: any) {
+      console.error("Erro ao buscar ONGs:", error.message);
+      setMensagem(
+        "Falha ao conectar com a API. Verifique sua conexão ou tente mais tarde."
+      );
     }
   };
 
   return (
     <section className="my-8">
-      <h2 className="text-2xl font-bold mb-4">Busque ONGs por Estado ou Serviço</h2>
+      <h2 className="text-2xl font-bold mb-4">
+        Busque ONGs por Estado ou Serviço
+      </h2>
       <form onSubmit={buscarONGs} className="space-y-4">
         <div>
           <label className="block mb-1 font-medium">Estado (UF):</label>
@@ -70,7 +78,6 @@ export default function FiltroInterativoSection() {
         </button>
       </form>
 
-      {/* Resultados */}
       <div className="mt-6">
         {mensagem && <p className="text-red-600">{mensagem}</p>}
         {resultados.length > 0 && (
