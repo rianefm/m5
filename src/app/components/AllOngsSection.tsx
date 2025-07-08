@@ -13,7 +13,6 @@ export default async function AllOngsSection() {
             <h3 className="font-semibold text-lg">{ong.nome}</h3>
             <p>Estado: {ong.estado}</p>
             <p>Serviço: {ong.servico}</p>
-            <button className="mt-2 text-purple-600 underline">Saiba mais</button>
           </div>
         ))}
       </div>

@@ -1,26 +1,34 @@
+// src/app/components/FooterSection.tsx
+
+import React from "react";
+
 export default function FooterSection() {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-800 text-white p-6 mt-12">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="text-center md:text-left">
-          <p className="text-lg font-semibold">Projeto ONGs &copy; 2025</p>
-          <p className="text-sm">Criado para conectar você a ONGs incríveis.</p>
+    <footer className="bg-[#1F2937] text-white py-8 px-6 mt-8 rounded-lg shadow-inner">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div className="text-center md:text-left mb-4 md:mb-0">
+          <p className="text-xl font-bold mb-1">
+            {" "}
+            Projeto ONGs &copy; {currentYear}
+          </p>
+          <p className="text-sm text-gray-400">
+            {" "}
+            Criado para conectar você a ONGs incríveis.
+          </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-2 md:gap-4 text-center md:text-left">
+
+        <nav className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
           <a
             href="https://github.com/rianefm/Api_ONGS"
             target="_blank"
-            className="hover:underline text-purple-300"
+            rel="noopener noreferrer"
+            className="text-[#7C3AED] hover:text-[#5B21B6] transition-colors"
           >
             GitHub da API
           </a>
-          <a href="#sobre" className="hover:underline text-purple-300">
-            Sobre a iniciativa
-          </a>
-          <a href="#contato" className="hover:underline text-purple-300">
-            Contato
-          </a>
-        </div>
+        </nav>
       </div>
     </footer>
   );
