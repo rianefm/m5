@@ -62,7 +62,7 @@ Siga os passos abaixo para configurar e executar a aplicação em sua máquina d
 
 2.  **Clonar o Repositório:**
     ```bash
-    git clone [[https://github.com/rianefm/m5.git))
+    git clone https://github.com/rianefm/m5.git
     ```
 
 3.  **Entrar na Pasta do Projeto:**
@@ -125,7 +125,7 @@ Este projeto está licenciado sob a licença MIT. Para mais detalhes, consulte o
 
 ## 👩🏽‍🦱 Desenvolvido por
 
-[Riane Ferreira Menezes](linkedin.com/in/rianeferreira](https://www.linkedin.com/in/rianeferreira/)) 
+[Riane Ferreira Menezes](https://www.linkedin.com/in/rianeferreira/).
 [GitHub de Riane Ferreira Menezes](https://github.com/rianefm)
 
 ---           
