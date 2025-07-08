@@ -62,9 +62,8 @@ Siga os passos abaixo para configurar e executar a aplicação em sua máquina d
 
 2.  **Clonar o Repositório:**
     ```bash
-    git clone [[https://github.com/rianefm/(https://github.com/rianefm/m5.git))
+    git clone [[https://github.com/rianefm/m5.git))
     ```
-    *(Substitua `rianefm/SEU_REPOSITORIO_FRONTEND` pelo caminho real do seu repositório frontend no GitHub)*
 
 3.  **Entrar na Pasta do Projeto:**
     ```bash
@@ -111,10 +110,10 @@ Siga os passos abaixo para configurar e executar a aplicação em sua máquina d
 
 Contribuições são muito bem-vindas! Se você tiver sugestões de melhorias, encontrar algum bug ou quiser adicionar novas funcionalidades, sinta-se à vontade para:
 
-1.  Abrir uma [Issue](https://github.com/rianefm/SEU_REPOSITORIO_FRONTEND/issues) descrevendo o problema ou a sugestão.
-2.  Criar um [Fork](https://github.com/rianefm/SEU_REPOSITORIO_FRONTEND/fork) do projeto.
+1.  Abrir uma [Issue](https://github.com/rianefm/m5/issues) descrevendo o problema ou a sugestão.
+2.  Criar um [Fork](https://github.com/rianefm/m5/fork) do projeto.
 3.  Desenvolver suas alterações em uma nova branch.
-4.  Enviar um [Pull Request](https://github.com/rianefm/SEU_REPOSITORIO_FRONTEND/pulls) detalhando suas modificações.
+4.  Enviar um [Pull Request](https://github.com/rianefm/m5/pulls) detalhando suas modificações.
 
 ---
 
@@ -126,7 +125,7 @@ Este projeto está licenciado sob a licença MIT. Para mais detalhes, consulte o
 
 ## 👩🏽‍🦱 Desenvolvido por
 
-[Riane Ferreira Menezes]([linkedin.com/in/rianeferreira](https://www.linkedin.com/in/rianeferreira/)) 
-[GitHub de Riane Ferreiar Menezes](https://github.com/rianefm)
+[Riane Ferreira Menezes](linkedin.com/in/rianeferreira](https://www.linkedin.com/in/rianeferreira/)) 
+[GitHub de Riane Ferreira Menezes](https://github.com/rianefm)
 
 ---           
