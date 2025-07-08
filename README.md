@@ -20,6 +20,7 @@ A aplicação oferece uma experiência de usuário moderna, responsiva e otimiza
 ## 📁 Estrutura de Pastas
 
 LANDINGPAGE/
+
 ├── .next/                
 ├── node_modules/         
 ├── public/              
@@ -61,13 +62,13 @@ Siga os passos abaixo para configurar e executar a aplicação em sua máquina d
 
 2.  **Clonar o Repositório:**
     ```bash
-    git clone [https://github.com/rianefm/SEU_REPOSITORIO_FRONTEND.git](https://github.com/rianefm/SEU_REPOSITORIO_FRONTEND.git)
+    git clone [[https://github.com/rianefm/(https://github.com/rianefm/m5.git))
     ```
     *(Substitua `rianefm/SEU_REPOSITORIO_FRONTEND` pelo caminho real do seu repositório frontend no GitHub)*
 
 3.  **Entrar na Pasta do Projeto:**
     ```bash
-    cd SEU_REPOSITORIO_FRONTEND
+    cd m5
     ```
 
 4.  **Instalar as Dependências:**
