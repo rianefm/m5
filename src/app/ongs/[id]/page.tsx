@@ -4,14 +4,18 @@ import { fetchOngById } from "@/app/hooks/useFetchOngs";
 import type { Ong } from "@/types";
 import Link from "next/link";
 
+// Definindo o tipo dos props de forma explícita
 type Props = {
   params: { id: string };
 };
 
+// A mudança principal está aqui: recebemos 'props' como um objeto inteiro
+// e depois o desestruturamos internamente.
+export default async function OngDetailPage(props: Props) {
+  const { id } = props.params; // Pegamos o 'id' de dentro dos props
 
-export default async function OngDetailPage({ params }: Props) {
   try {
-    const ong: Ong = await fetchOngById(params.id);
+    const ong: Ong = await fetchOngById(id); // Usamos o 'id' aqui
 
     return (
       <main className="container mx-auto p-8">
