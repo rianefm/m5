@@ -18,7 +18,7 @@ export default function HeroSection() {
 
       <div className="relative p-6 text-center z-10">
         <h1 className="text-3xl font-bold text-[#7C3AED] dark:text-white mb-2">
-          Conheça e Apoie ONGs que Fazem a Diferença
+          Conheça a EloSocial e Apoie ONGs que Fazem a Diferença
         </h1>
         <p className="text-white mb-4 text-shadow-sm">
           Encontre ONGs por estado, tipo de serviço ou conheça todas elas!
