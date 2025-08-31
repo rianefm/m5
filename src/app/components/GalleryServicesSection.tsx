@@ -20,20 +20,22 @@ export default function GalleryServicesSection() {
       className="my-8"
       aria-label="Galeria de serviços"
     >
-      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+      {}
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">
         Serviços Oferecidos
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {servicos.map((s) => (
           <div
             key={s.nome}
-            className="flex flex-col items-center justify-center p-6 bg-gradient-to-r from-purple-100 via-white to-purple-100 rounded-xl shadow-md transition hover:scale-105 hover:shadow-lg cursor-pointer"
+            className="flex flex-col items-center justify-center p-6 bg-gradient-to-r from-purple-100 via-white to-purple-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 rounded-xl shadow-md transition hover:scale-105 hover:shadow-lg cursor-pointer"
             role="button"
             tabIndex={0}
             aria-label={`Serviço de ${s.nome}`}
           >
             <span className="text-5xl">{s.emoji}</span>
-            <span className="mt-4 text-lg font-semibold text-center">
+            {}
+            <span className="mt-4 text-lg font-semibold text-center text-gray-800 dark:text-gray-200">
               {s.nome}
             </span>
           </div>

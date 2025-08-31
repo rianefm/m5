@@ -20,3 +20,30 @@ export async function fetchOngsByService(servico: string) {
   );
   return res.json();
 }
+
+export async function fetchStatesList() {
+  const res = await fetch("https://api-ongs.onrender.com/api/ongs/lists/estados", {
+    cache: "no-store",
+  });
+  return res.json();
+}
+
+export async function fetchServicesList() {
+  const res = await fetch("https://api-ongs.onrender.com/api/ongs/lists/servicos", {
+    cache: "no-store",
+  });
+  return res.json();
+}
+
+export async function fetchOngById(id: string) {
+  const res = await fetch(`https://api-ongs.onrender.com/api/ongs/${id}`, {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    // Se a ONG não for encontrada, a API retorna 404, o que causa um erro aqui
+    throw new Error('ONG não encontrada');
+  }
+
+  return res.json();
+}
